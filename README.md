@@ -3,7 +3,7 @@
 Please write a java 8 program that takes a basket of items and outputs its total cost.
 The basket can contain one or more of the following items: Bananas, Oranges, Apples, Lemons, Peaches
 
-##Assumptions:
+## Assumptions:
 
 - Each Banana cost - 0.25
 - Each Orange cost - 0.25
