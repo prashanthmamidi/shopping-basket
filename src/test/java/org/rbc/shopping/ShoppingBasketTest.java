@@ -32,7 +32,6 @@ public class ShoppingBasketTest {
     public void evaluateBasket_throwsInvalidItemException_givenBasketHasInvalidItem() throws Exception {
         exception.expect(InvalidItemInShoppingBasketException.class);
         exception.expectMessage("Invalid item in the basket");
-        Map<String, Integer> shoppingItems = new HashMap<>();
         shoppingItems.put("Blueberry", 1);
         shoppingBasket.evaluateBasket(shoppingItems);
     }
