@@ -24,12 +24,12 @@ public class ShoppingBasket {
         basketPrice.put("Orange", value(0.25));
         basketPrice.put("Apple", value(0.50));
         basketPrice.put("Lemon", value(0.20));
-        basketPrice.put("Peache", value(0.20));
+        basketPrice.put("Peach", value(0.20));
         return basketPrice.get(fruit);
     }
 
     private void isValidFruit(Set<String> fruits) {
-        Set<String> validFruits = new HashSet<>(asList("Banana", "Orange", "Apple", "Lemon", "Peache"));
+        Set<String> validFruits = new HashSet<>(asList("Banana", "Orange", "Apple", "Lemon", "Peach"));
         if (!validFruits.containsAll(fruits)) {
             throw new InvalidItemInShoppingBasketException("Invalid item in the basket");
         }

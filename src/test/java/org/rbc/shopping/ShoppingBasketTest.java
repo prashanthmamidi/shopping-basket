@@ -40,7 +40,7 @@ public class ShoppingBasketTest {
     public void evaluateBasket_returnsBasketCost_givenOneItemEach() throws Exception {
         shoppingItems.put("Apple", 1);
         shoppingItems.put("Banana", 1);
-        shoppingItems.put("Peache", 1);
+        shoppingItems.put("Peach", 1);
         shoppingItems.put("Lemon", 1);
         shoppingItems.put("Orange", 1);
         BigDecimal actualCost = shoppingBasket.evaluateBasket(shoppingItems);
@@ -65,7 +65,7 @@ public class ShoppingBasketTest {
     public void evaluateBasket_returnsBasketCost_givenMultipleItemsWithMultipleQtys() throws Exception {
         shoppingItems.put("Apple", 2);
         shoppingItems.put("Banana", 6);
-        shoppingItems.put("Peache", 4);
+        shoppingItems.put("Peach", 4);
         shoppingItems.put("Orange", 5);
         BigDecimal actualCost = shoppingBasket.evaluateBasket(shoppingItems);
         assertThat(actualCost, is(value(4.55)));
